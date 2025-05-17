@@ -1,0 +1,109 @@
+:root {
+  --button-font-size: 0.875rem; 
+  --button-font-weight: 500;
+  --button-letter-spacing: 0.25px;
+  --button-line-height: 1.25;
+  --button-border-radius: 999px;
+  --button-padding-y: 0.5rem; 
+  --button-padding-x: 1rem;   
+  --button-min-height: 2.25rem; 
+
+  /* Color variables */
+  --color-primary: #6200ee;
+  --color-secondary: #03dac6;
+  --color-text: #000000;
+  --color-button-text: #ffffff;
+  --color-border: #cccccc;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  letter-spacing: var(--button-letter-spacing);
+  line-height: var(--button-line-height);
+  cursor: pointer;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s, color 0.3s, border-color 0.3s;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  min-height: var(--button-min-height);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.button:disabled,
+.button--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Variants */
+.button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-button-text);
+  font-weight: 600;
+}
+
+.button--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.button--outline {
+  background-color: transparent;
+  border: 2.5px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.button--outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-button-text);
+}
+
+.button--ghost {
+  background-color: transparent;
+  color: var(--color-primary);
+  box-shadow: none;
+}
+
+.button--ghost:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Sizes */
+.button--sm {
+  font-size: 0.75rem;
+  padding: 0.375rem 0.75rem; 
+  min-height: 2rem; 
+}
+
+.button--md {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  min-height: 2.25rem; 
+}
+
+.button--lg {
+  font-size: 1rem;
+  padding: 0.625rem 1.25rem; 
+  min-height: 2.5rem; 
+}
