@@ -1,6 +1,6 @@
 {
   "name": "@ievazem/ui-library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A soft-themed React component library",
   "main": "dist/ui-library.umd.js",
   "module": "dist/ui-library.es.js",
@@ -53,6 +53,6 @@
     "react-dom": "^19.1.0"
   },
   "publishConfig": {
-  "access": "public"
-}
+    "access": "public"
+  }
 }
