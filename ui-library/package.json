@@ -1,5 +1,5 @@
 {
-  "name": "ui-library",
+  "name": "@ievazem/ui-library",
   "version": "0.1.0",
   "description": "A soft-themed React component library",
   "main": "dist/ui-library.umd.js",
@@ -51,5 +51,8 @@
   "peerDependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
-  }
+  },
+  "publishConfig": {
+  "access": "public"
+}
 }
