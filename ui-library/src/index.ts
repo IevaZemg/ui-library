@@ -6,3 +6,4 @@ export { SearchBox } from './components/SearchBox';
 export { Toggle } from './components/Toggle';
 export { ThemeSelector } from './components/ThemeSelector';
 export { ThemeProvider, useTheme } from './theme/ThemeProvider';
+export type { ThemeOption } from './components/ThemeSelector/ThemeOption';
